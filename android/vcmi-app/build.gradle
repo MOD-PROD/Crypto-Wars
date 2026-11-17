@@ -36,7 +36,7 @@ android {
 	packagingOptions.jniLibs.useLegacyPackaging true
 
 	defaultConfig {
-		applicationId = basePackageId
+		applicationId = "app.modprod.cryptowars"
 
 		compileSdk = androidCompileSdkVersion.takeAfter("-") as Integer // has "android-" prepended
 		minSdk = qtMinSdkVersion as Integer
@@ -70,7 +70,7 @@ android {
 			debuggable true
 			applicationIdSuffix = debugSuffix
 			manifestPlaceholders = [
-				applicationLabel: 'VCMI debug',
+				applicationLabel: 'CryptoWars debug',
 				applicationVariant: 'debug',
 			]
 			ndk {
@@ -84,7 +84,7 @@ android {
 			signingConfig = signingConfigs[project.findProperty('signingConfig') ?: 'releaseSigning']
 			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 			manifestPlaceholders = [
-				applicationLabel: project.findProperty('applicationLabel') ?: 'VCMI',
+				applicationLabel: project.findProperty('applicationLabel') ?: 'CryptoWars',
 				applicationVariant: project.findProperty('applicationVariant') ?: '',
 			]
 			ndk {
@@ -108,7 +108,7 @@ android {
 	}
 }
 
-base.archivesName = "vcmi"
+base.archivesName = "cryptowars"
 shortcutHelper.filePath = "../shortcuts.xml"
 
 def SigningPropertiesPath(final basePath, final signingConfigKey) {
