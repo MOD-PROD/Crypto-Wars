@@ -1,0 +1,8 @@
+{
+  "name": "CryptoWars",
+  "description": "Prototype expansion. Gameplay content is not yet implemented.",
+  "version": "0.1.0",
+  "author": "ModProd",
+  "modType": "Expansion",
+  "keepDisabled": true
+}
