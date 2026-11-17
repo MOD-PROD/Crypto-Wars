@@ -59,3 +59,10 @@ jobs:
           name: cryptowars-installable-preview
           path: cryptowars/generated/installable/cryptowars-preview.zip
           if-no-files-found: error
+      - name: Inventory legacy resources
+        run: python cryptowars/tools/audit_legacy_resources.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cryptowars-legacy-resource-audit
+          path: cryptowars/generated/legacy-resource-audit.json
+          if-no-files-found: error
