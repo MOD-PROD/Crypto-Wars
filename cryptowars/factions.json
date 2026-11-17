@@ -59,6 +59,12 @@
       "name": "Cœur",
       "color": "red",
       "weapon": "mace"
+    },
+    {
+      "id": "spade",
+      "name": "Pique",
+      "color": "black-gold",
+      "weapon": "axe"
     }
   ]
 }
