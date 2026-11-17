@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ton",
+    "portrait": "ton/portrait.png",
+    "original": "ton/original.webp",
+    "frames": 9,
+    "size": [
+      431,
+      405
+    ]
+  },
+  {
+    "id": "btc",
+    "portrait": "btc/portrait.png",
+    "original": "btc/original.gif",
+    "frames": 9,
+    "size": [
+      418,
+      424
+    ]
+  },
+  {
+    "id": "eth",
+    "portrait": "eth/portrait.png",
+    "original": "eth/original.gif",
+    "frames": 9,
+    "size": [
+      431,
+      405
+    ]
+  },
+  {
+    "id": "sol",
+    "portrait": "sol/portrait.png",
+    "original": "sol/original.gif",
+    "frames": 9,
+    "size": [
+      431,
+      416
+    ]
+  },
+  {
+    "id": "xmr",
+    "portrait": "xmr/portrait.png",
+    "original": "xmr/original.gif",
+    "frames": 9,
+    "size": [
+      436,
+      406
+    ]
+  },
+  {
+    "id": "trx",
+    "portrait": "trx/portrait.png",
+    "original": "trx/original.gif",
+    "frames": 9,
+    "size": [
+      434,
+      406
+    ]
+  },
+  {
+    "id": "diamond",
+    "portrait": "diamond/portrait.png",
+    "original": "diamond/original.webp",
+    "frames": 9,
+    "size": [
+      459,
+      430
+    ]
+  },
+  {
+    "id": "club",
+    "portrait": "club/portrait.png",
+    "original": "club/original.webp",
+    "frames": 9,
+    "size": [
+      427,
+      435
+    ]
+  },
+  {
+    "id": "heart",
+    "portrait": "heart/portrait.png",
+    "original": "heart/original.webp",
+    "frames": 9,
+    "size": [
+      420,
+      415
+    ]
+  },
+  {
+    "id": "spade",
+    "portrait": "spade/portrait.png",
+    "original": "spade/original.webp",
+    "frames": 9,
+    "size": [
+      426,
+      410
+    ]
+  }
+]
