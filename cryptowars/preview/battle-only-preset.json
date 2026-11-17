@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "status": "integration-input-not-native-save",
+  "engineEntry": "server/lobby/BattleOnlyMap.cpp",
+  "battlefield": {
+    "width": 10,
+    "height": 10,
+    "terrain": "dirt",
+    "siege": false
+  },
+  "players": [
+    {
+      "side": 0,
+      "army": [
+        {
+          "creature": "cryptowars:tonChampion",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "side": 1,
+      "army": [
+        {
+          "creature": "cryptowars:btcChampion",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "spellBook": false,
+  "warMachines": false,
+  "primarySkills": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "requires": [
+    "resolve two hero types",
+    "load creature module",
+    "provide terrain and battle UI resources"
+  ],
+  "victory": "eliminate opposing army"
+}
