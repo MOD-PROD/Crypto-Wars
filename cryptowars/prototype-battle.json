@@ -1,0 +1,50 @@
+{
+  "status": "design-only",
+  "units": [
+    {
+      "id": "tonChampion",
+      "faction": "ton",
+      "attack": 12,
+      "defense": 10,
+      "hitPoints": 60,
+      "speed": 8,
+      "damage": {
+        "min": 10,
+        "max": 15
+      }
+    },
+    {
+      "id": "btcChampion",
+      "faction": "btc",
+      "attack": 13,
+      "defense": 14,
+      "hitPoints": 80,
+      "speed": 5,
+      "damage": {
+        "min": 12,
+        "max": 17
+      }
+    }
+  ],
+  "scenario": {
+    "teams": [
+      {
+        "unit": "tonChampion",
+        "count": 5
+      },
+      {
+        "unit": "btcChampion",
+        "count": 4
+      }
+    ],
+    "victory": "eliminate-opponent"
+  },
+  "requiredAnimations": [
+    "idle",
+    "walk",
+    "attack",
+    "hit",
+    "defend",
+    "death"
+  ]
+}
