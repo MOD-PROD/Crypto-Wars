@@ -1,0 +1,46 @@
+name: CryptoWars assets
+on:
+  push:
+    branches: ['mission/001-cryptowars']
+    paths: ['cryptowars/**', '.github/workflows/cryptowars-assets.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow==11.3.0
+      - run: python cryptowars/tools/extract_frames.py
+      - name: Verify all 90 sprites
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from PIL import Image
+          root = Path('cryptowars/generated/frames')
+          manifest = json.loads(Path('cryptowars/assets/manifest.json').read_text())
+          assert len(manifest) == 10
+          total = 0
+          for entry in manifest:
+              folder = root / entry['id']
+              frames = json.loads((folder / 'frames.json').read_text())['frames']
+              assert len(frames) == entry['frames']
+              for frame in frames:
+                  with Image.open(folder / frame['file']) as im:
+                      assert im.mode == 'RGBA'
+                      assert list(im.size) == entry['size']
+                      im.verify()
+                  total += 1
+          assert total == 90
+          print(f'Validated {total} source sprites')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cryptowars-source-sprites
+          path: cryptowars/generated/frames/
+          if-no-files-found: error
