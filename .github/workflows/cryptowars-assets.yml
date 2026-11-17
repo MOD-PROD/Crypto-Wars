@@ -44,3 +44,11 @@ jobs:
           name: cryptowars-source-sprites
           path: cryptowars/generated/frames/
           if-no-files-found: error
+
+      - name: Generate VCMI preview layouts
+        run: python cryptowars/tools/build_battle_preview.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cryptowars-vcmi-preview
+          path: cryptowars/generated/battle-preview/
+          if-no-files-found: error
