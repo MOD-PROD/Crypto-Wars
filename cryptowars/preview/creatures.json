@@ -1,0 +1,70 @@
+{
+  "tonChampion": {
+    "disabled": true,
+    "special": true,
+    "excludeFromRandomization": true,
+    "faction": "neutral",
+    "name": {
+      "singular": "TON Champion",
+      "plural": "TON Champions"
+    },
+    "level": 5,
+    "cost": {
+      "gold": 500
+    },
+    "speed": 8,
+    "hitPoints": 60,
+    "attack": 12,
+    "defense": 10,
+    "damage": {
+      "min": 10,
+      "max": 15
+    },
+    "fightValue": 500,
+    "aiValue": 500,
+    "graphics": {
+      "animation": "cryptowars/ton",
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 10
+    },
+    "sound": {}
+  },
+  "btcChampion": {
+    "disabled": true,
+    "special": true,
+    "excludeFromRandomization": true,
+    "faction": "neutral",
+    "name": {
+      "singular": "BTC Champion",
+      "plural": "BTC Champions"
+    },
+    "level": 5,
+    "cost": {
+      "gold": 500
+    },
+    "speed": 5,
+    "hitPoints": 80,
+    "attack": 13,
+    "defense": 14,
+    "damage": {
+      "min": 12,
+      "max": 17
+    },
+    "fightValue": 500,
+    "aiValue": 500,
+    "graphics": {
+      "animation": "cryptowars/btc",
+      "animationTime": {
+        "attack": 1,
+        "walk": 1,
+        "idle": 10
+      },
+      "timeBetweenFidgets": 10
+    },
+    "sound": {}
+  }
+}
