@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "status": "design-only",
+  "prototype": [
+    "ton",
+    "btc"
+  ],
+  "factions": [
+    {
+      "id": "ton",
+      "name": "TON",
+      "color": "blue",
+      "weapon": "spear"
+    },
+    {
+      "id": "btc",
+      "name": "BTC",
+      "color": "gold",
+      "weapon": "axe"
+    },
+    {
+      "id": "eth",
+      "name": "ETH",
+      "color": "purple",
+      "weapon": "sword"
+    },
+    {
+      "id": "sol",
+      "name": "SOL",
+      "color": "turquoise-purple",
+      "weapon": "axe"
+    },
+    {
+      "id": "xmr",
+      "name": "XMR",
+      "color": "orange-black",
+      "weapon": "axe"
+    },
+    {
+      "id": "trx",
+      "name": "TRX",
+      "color": "red-black",
+      "weapon": "axe"
+    },
+    {
+      "id": "diamond",
+      "name": "Carreau",
+      "color": "orange",
+      "weapon": "hammer"
+    },
+    {
+      "id": "club",
+      "name": "Trèfle",
+      "color": "green",
+      "weapon": "sword-shield"
+    },
+    {
+      "id": "heart",
+      "name": "Cœur",
+      "color": "red",
+      "weapon": "mace"
+    }
+  ]
+}
