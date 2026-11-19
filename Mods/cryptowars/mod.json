@@ -1,8 +1,10 @@
 {
   "name": "CryptoWars",
-  "description": "Prototype expansion. Gameplay content is not yet implemented.",
-  "version": "0.1.0",
-  "author": "ModProd",
+  "description": "Minimal prototype expansion with TON and BTC champions. Playable battle scenario stub. Full animations pending.",
+  "version": "0.2.0-minimal",
+  "author": "ModProd / Grok",
   "modType": "Expansion",
-  "keepDisabled": true
+  "creatures": ["config/creatures.json"],
+  "factions": ["config/factions.json"],
+  "keepDisabled": false
 }
